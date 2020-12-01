@@ -1,6 +1,4 @@
-package com.sharewiner.workday_kotlin.day0814
-
-import java.lang.reflect.Array
+package com.sharewiner.workday_kotlin.year2020.month08.day0814
 
 /**
  * Created By shao

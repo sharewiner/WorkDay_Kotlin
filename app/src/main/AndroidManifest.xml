@@ -19,6 +19,7 @@
 
         <activity android:name=".year2021.month02.AcLifeActivity" />
         <activity android:name=".year2021.month02.TryFirstActivity" />
+        <activity android:name=".year2021.month02.Try2Activity" />
     </application>
 
 </manifest>

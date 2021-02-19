@@ -49,11 +49,28 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             //发送邮件
 //            val emailIntent = Intent(Intent.ACTION_SEND).apply { putExtra(Intent.EXTRA_EMAIL, "啊哈哈哈") }
 //            startActivity(intent2)
-
+            //发送带有附件的电子邮件
+            val emailIntent: Intent = Intent(Intent.ACTION_SEND).apply {
+                putExtra(Intent.EXTRA_EMAIL, arrayOf("603032132@qq.com"))
+                putExtra(Intent.EXTRA_SUBJECT, "EAF")
+                putExtra(Intent.EXTRA_TEXT, "你好")
+                putExtra(Intent.EXTRA_STREAM, Uri.parse("awdafafaffa"))
+            }
             //打电话
             val callIntent: Intent =
                 Uri.parse("tel:5551234").let { number -> Intent(Intent.ACTION_CALL, number) }
             startActivity(callIntent)
+
+            //查看地图
+            val mapIntent: Intent =
+                Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway,+Mountain+View,+California")
+                    .let { location -> Intent(Intent.ACTION_VIEW, location) }
+            startActivity(mapIntent)
+
+            //查看网页
+            val viewIntent: Intent =
+                Uri.parse("wwww.baidu.com").let { path -> Intent(Intent.ACTION_VIEW, path) }
+            startActivity(viewIntent)
 
 
         }

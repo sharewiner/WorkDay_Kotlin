@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentContainerView
 import com.sharewiner.workday_kotlin.year2021.month02.Try2Activity
+import com.sharewiner.workday_kotlin.year2021.month05.TestCodeChangeActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //                    "sh_winer"
 //                )
 //            }
-            val intent = Intent(this, Try2Activity::class.java)
+            val intent = Intent(this, TestCodeChangeActivity::class.java)
             startActivity(intent)
 
         } else if (v == btn_2) {
